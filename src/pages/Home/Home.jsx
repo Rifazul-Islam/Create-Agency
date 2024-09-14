@@ -14,8 +14,8 @@ const Home = () => {
       <div className="mt-8">
         <Solution></Solution>
         <CreativeProject></CreativeProject>
-        {/* <Quality></Quality>
-           <Reivews></Reivews>
+        <Quality></Quality>
+        {/*   <Reivews></Reivews>
           <LineSlider></LineSlider>
           <TeamsMember></TeamsMember>  */}
       </div>

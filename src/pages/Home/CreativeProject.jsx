@@ -138,8 +138,8 @@ const CreativeProject = () => {
           </SwiperSlide>
 
           <SwiperSlide
-            className=" relative border-4 border-white font-bold rounded-md 
-        transition duration-500 hover:scale-110"
+            className="relative border-4 border-white font-bold rounded-md 
+             transition duration-500 hover:scale-110"
           >
             <img
               src="https://aximo-react.vercel.app/assets/project1-CoLuXzLW.png"
