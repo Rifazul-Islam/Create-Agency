@@ -32,11 +32,16 @@ const CreativeProject = () => {
 
       <div className="pb-10 ">
         <Swiper
-          slidesPerView={2}
           spaceBetween={30}
           mousewheel={true}
           pagination={{
             clickable: true,
+          }}
+          breakpoints={{
+            // When window width is >= 640px (for phones and small screens)
+            640: { slidesPerView: 1 }, // sm
+            768: { slidesPerView: 2 }, // md
+            1024: { slidesPerView: 2 }, // lg
           }}
           modules={[Mousewheel, Pagination]}
           className="mySwiper"
@@ -95,39 +100,63 @@ const CreativeProject = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="border-4 border-white font-bold rounded-md">
+          <SwiperSlide className=" relative border-4 border-white font-bold rounded-md">
             <img
-              className="relative"
               src="https://aximo-react.vercel.app/assets/project1-CoLuXzLW.png"
               alt=""
             />
-            <h2 className="text-2xl absolute bottom-4 left-2 font-semibold font-sans  text-white">
-              <Link to={"#"}>Mobile App Design</Link>
-            </h2>
+            <div className="absolute left-6 bottom-7">
+              <h2 className="text-4xl font-inter font-bold">
+                App UI/UX Design
+              </h2>
+              <div className="flex items-center gap-2 md:gap-4 pt-3">
+                <p className="text-lg font-inter font-semibold w-96">
+                  Designing the UI/UXe for mobile apps and web applications to
+                  ensure usability & engagement.
+                </p>
+                <FaArrowRight className="text-3xl" />
+              </div>
+            </div>
           </SwiperSlide>
-          <SwiperSlide className="border-4 border-white font-bold rounded-md">
+          <SwiperSlide className=" relative border-4 border-white font-bold rounded-md">
             <img
-              className="relative"
               src="https://aximo-react.vercel.app/assets/project3-BOxrz7G1.png"
               alt=""
             />
-            <h2 className="text-2xl absolute bottom-4 left-2 font-semibold font-sans  text-white">
-              <Link to={"#"}> Project Marster Design</Link>
-            </h2>
+            <div className="absolute left-6 bottom-7">
+              <h2 className="text-4xl font-inter font-bold">
+                Mobile App Design
+              </h2>
+              <div className="flex items-center gap-2 md:gap-4 pt-3">
+                <p className="text-lg font-inter font-semibold w-96">
+                  Designing the UI/UXe for mobile apps and web applications to
+                  ensure usability & engagement.
+                </p>
+                <FaArrowRight className="text-3xl" />
+              </div>
+            </div>
           </SwiperSlide>
 
           <SwiperSlide
-            className="border-4 border-white font-bold rounded-md 
+            className=" relative border-4 border-white font-bold rounded-md 
         transition duration-500 hover:scale-110"
           >
             <img
-              className="relative"
               src="https://aximo-react.vercel.app/assets/project1-CoLuXzLW.png"
               alt=""
             />
-            <h2 className="text-2xl absolute bottom-4 left-2 font-semibold font-sans  text-white">
-              <Link to={"#"}> UI/UX Design</Link>
-            </h2>
+            <div className="absolute left-6 bottom-7">
+              <h2 className=" md:text-4xl font-inter font-bold">
+                Mobile App Design
+              </h2>
+              <div className="flex items-center gap-2 md:gap-4 pt-3">
+                <p className="text-lg font-inter font-semibold w-96">
+                  Designing the UI/UXe for mobile apps and web applications to
+                  ensure usability & engagement.
+                </p>
+                <FaArrowRight className="text-3xl" />
+              </div>
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>
