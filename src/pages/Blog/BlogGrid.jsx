@@ -1,17 +1,12 @@
 import { CiSearch } from "react-icons/ci";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
+import Cover from "../share/Cover";
 const BlogGrid = () => {
   return (
     <div className="bg-[#FFFFF5]">
-      <div className="bg-black py-[200px]">
-        <h2 className="text-6xl font-semibold text-[#FFFFF5] text-center font-poppins">
-          Blog Grid
-        </h2>
-        <div className="flex justify-center text-white gap-2 text-2xl font-semibold items-center font-poppins pt-8">
-          <Link to="/"> Home</Link> <IoIosArrowForward />
-          <span className="text-[#B3F747]">Blog_Grid </span>
-        </div>
+      <div>
+        <Cover title={"Blog Grid"} />
       </div>
 
       <div className="grid lg:grid-cols-3 gap-4 my-10  lg:px-20 px-4 ">

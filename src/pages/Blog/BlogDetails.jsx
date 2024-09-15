@@ -3,19 +3,13 @@ import { SlLike } from "react-icons/sl";
 import { FaRegComment } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
+import Cover from "../share/Cover";
 const BlogDetails = () => {
   return (
-    <div className="">
-      <div className="bg-black py-[200px]">
-        <h2 className="text-6xl font-semibold text-[#FFFFF5] text-center font-poppins">
-          Blog Details
-        </h2>
-        <div className="flex justify-center text-white gap-2 text-2xl font-semibold items-center font-poppins pt-8">
-          <Link to="/"> Home</Link> <IoIosArrowForward />
-          <span className="text-[#B3F747]">Blog_Details </span>
-        </div>
+    <div>
+      <div>
+        <Cover title={"Blog Details"} />
       </div>
-
       {/* Detaisl Page  */}
 
       <div className="grid lg:grid-cols-3 lg:px-20 px-3 py-14 gap-4 bg-[#FFFFF5]">

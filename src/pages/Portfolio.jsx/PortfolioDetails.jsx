@@ -3,18 +3,13 @@ import { FiSearch } from "react-icons/fi";
 import { GoDotFill } from "react-icons/go";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
+import Cover from "../share/Cover";
 
 const PortfolioDetails = () => {
   return (
     <div className="bg-[#FFFFF5]">
-      <div className="bg-black py-[200px]">
-        <h2 className="text-6xl font-semibold text-[#FFFFF5] text-center font-poppins">
-          Portfolio Details
-        </h2>
-        <div className="flex justify-center text-white gap-2 text-2xl font-semibold items-center font-poppins pt-8">
-          <Link to="/"> Home</Link> <IoIosArrowForward />
-          <span className="text-[#B3F747]">Portfolio Details </span>
-        </div>
+      <div>
+        <Cover title={"Portfolio Details"} />
       </div>
 
       <div className="pt-5 px-4 lg:px-32 md:py-14">

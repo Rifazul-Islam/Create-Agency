@@ -5,20 +5,15 @@ import LineSlider from "../Home/LineSlider";
 import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
+import Cover from "../share/Cover";
 const Pricing = () => {
   const [inCrement, setInCrement] = useState(false);
 
   return (
     <div className="bg-[#FFFFF5] ">
       {/* Header Area */}
-      <div className="bg-black py-[200px]">
-        <h2 className="text-6xl font-semibold text-[#FFFFF5] text-center font-poppins">
-          Pricing
-        </h2>
-        <div className="flex justify-center text-white gap-2 text-2xl font-semibold items-center font-poppins pt-8">
-          <Link to="/"> Home</Link> <IoIosArrowForward />
-          <span className="text-[#B3F747]">Pricing </span>
-        </div>
+      <div>
+        <Cover title={"Pricing"}> </Cover>
       </div>
 
       {/* Package Buy Area */}

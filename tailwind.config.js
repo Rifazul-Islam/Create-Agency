@@ -18,13 +18,13 @@ export default {
       },
 
       keyframes: {
-        "float-top-bottom": {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(100px)" }, // Adjust the value to control the distance
+        "float-left-right": {
+          "0%, 100%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(100px)" }, // Adjust the value to control the distance
         },
       },
       animation: {
-        float: "float-top-bottom 6s ease-in-out infinite",
+        float: "float-left-right 6s ease-in-out infinite",
       },
     },
   },

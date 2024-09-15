@@ -49,6 +49,7 @@ const Navbar = () => {
               <Link to="/about" className="hover:text-[#BEF264]">
                 About Us
               </Link>
+
               <div className="relative z-10">
                 <button
                   onMouseEnter={() => setIsDropdownOpen(true)}
@@ -297,9 +298,7 @@ const Navbar = () => {
               <Link to="/blog" className="hover:text-[#BEF264]">
                 Blog
               </Link>
-              <a href="#" className="hover:text-[#BEF264]">
-                Contact Us
-              </a>
+              <Link to="/contact_us">Contact-US</Link>
             </div>
 
             {/* Contact Button (large screens) */}
@@ -327,37 +326,239 @@ const Navbar = () => {
         {/* Mobile Menu (small screens) */}
         {isOpen && (
           <div className="md:hidden bg-black text-white">
-            <a href="#" className="block px-3 py-2 hover:bg-green-500">
+            <Link
+              href="#"
+              className="block px-3 py-2 rounded-lg hover:text-black hover:bg-primary "
+            >
               Demo
-            </a>
-            <a href="#" className="block px-3 py-2 hover:bg-green-500">
-              About Us
-            </a>
+            </Link>
+
             <button
-              className="w-full text-left px-3 py-2 hover:bg-green-500"
+              className="w-full text-left px-3 py-2 rounded-lg hover:text-black hover:bg-primary "
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               Pages
             </button>
             {isDropdownOpen && (
               <div className="pl-4">
-                <a href="#" className="block px-3 py-2 hover:bg-gray-200">
-                  Page 1
-                </a>
-                <a href="#" className="block px-3 py-2 hover:bg-gray-200">
-                  Page 2
-                </a>
-                <a href="#" className="block px-3 py-2 hover:bg-gray-200">
-                  Page 3
-                </a>
+                <Link
+                  to="/pricing"
+                  className="block px-3 py-2 rounded-lg hover:text-black hover:bg-primary "
+                >
+                  Pricing
+                </Link>
+                <Link
+                  to="/about"
+                  className="block px-3 py-2 rounded-lg hover:text-black hover:bg-primary "
+                >
+                  About
+                </Link>
+
+                {/* blog Area phone Responsive */}
+
+                <button
+                  className="w-full flex   items-center justify-between text-left px-3 py-2 rounded-lg hover:text-black hover:bg-primary "
+                  onClick={() => setBlogOpen(!blogOpen)}
+                >
+                  <span> Blog </span>
+                  {blogOpen ? (
+                    <span>
+                      <IoIosArrowUp />
+                    </span>
+                  ) : (
+                    <span>
+                      <IoIosArrowDown />
+                    </span>
+                  )}
+                </button>
+
+                {blogOpen && (
+                  <div className="pl-4 ">
+                    <Link
+                      to="/blog"
+                      className="block px-4  rounded-lg  mx-2 py-1.5 hover:text-black hover:bg-primary "
+                    >
+                      Our Blog
+                    </Link>
+                    <Link
+                      to="/blog_grid"
+                      className="block px-4  rounded-lg  mx-2 py-1.5 hover:text-black hover:bg-primary "
+                    >
+                      Our Grid
+                    </Link>
+                    <Link
+                      to="/blog_details"
+                      className="block px-4  rounded-lg  mx-2 py-1.5 hover:text-black hover:bg-primary "
+                    >
+                      Blog Details
+                    </Link>
+                  </div>
+                )}
+
+                {/* blog Area phone Responsive  End*/}
+
+                {/* Service  Area start phone Responsive */}
+
+                <button
+                  className="w-full flex  items-center justify-between text-left px-3 py-2 rounded-lg hover:text-black hover:bg-primary "
+                  onClick={() => setService(!service)}
+                >
+                  <span> Service</span>
+                  {service ? (
+                    <span>
+                      <IoIosArrowUp />
+                    </span>
+                  ) : (
+                    <span>
+                      <IoIosArrowDown />
+                    </span>
+                  )}
+                </button>
+
+                {service && (
+                  <div className="pl-4 ">
+                    <Link
+                      to="/service"
+                      className="block px-4  rounded-lg  mx-2 py-1.5 hover:text-black hover:bg-primary "
+                    >
+                      Our Service
+                    </Link>
+                    <Link
+                      to="/service_details"
+                      className="block px-4    mx-2 py-1.5 rounded-lg hover:text-black hover:bg-primary "
+                    >
+                      Service_Details
+                    </Link>
+                  </div>
+                )}
+
+                {/* Servie End Area phone Responsive  End*/}
+
+                {/* Team Area start phone Responsive */}
+
+                <button
+                  className="w-full flex  items-center justify-between text-left px-3 py-2 rounded-lg hover:text-black hover:bg-primary "
+                  onClick={() => setTeam(!team)}
+                >
+                  <span> Team</span>
+                  {team ? (
+                    <span>
+                      <IoIosArrowUp />
+                    </span>
+                  ) : (
+                    <span>
+                      <IoIosArrowDown />
+                    </span>
+                  )}
+                </button>
+
+                {team && (
+                  <div className="pl-4 ">
+                    <Link
+                      to="/team"
+                      className="block px-4  rounded-lg  mx-2 py-1.5 hover:text-black hover:bg-primary "
+                    >
+                      Our Team
+                    </Link>
+                    <Link
+                      to="/team_details"
+                      className="block px-4  rounded-lg  mx-2 py-1.5 hover:text-black hover:bg-primary "
+                    >
+                      Team_Details
+                    </Link>
+                  </div>
+                )}
+
+                {/* Team End Area phone Responsive  End*/}
+
+                {/* Portfolio  Area start phone Responsive */}
+
+                <button
+                  className="w-full flex  items-center justify-between text-left px-3 py-2 rounded-lg hover:text-black hover:bg-primary "
+                  onClick={() => setPortfolio(!portfolio)}
+                >
+                  <span> Portfolio</span>
+                  {portfolio ? (
+                    <span>
+                      <IoIosArrowUp />
+                    </span>
+                  ) : (
+                    <span>
+                      <IoIosArrowDown />
+                    </span>
+                  )}
+                </button>
+
+                {portfolio && (
+                  <div className="pl-4 ">
+                    <Link
+                      to="/port_oneColumn"
+                      className="block px-4  rounded-lg  mx-2 py-1.5 hover:text-black hover:bg-primary "
+                    >
+                      Portfolio One Column
+                    </Link>
+                    <Link
+                      to="/port_towColumn"
+                      className="block px-4  rounded-lg  mx-2 py-1.5 hover:text-black hover:bg-primary "
+                    >
+                      Portfolio Two Column
+                    </Link>
+                    <Link
+                      to="/port_details"
+                      className="block px-4  rounded-lg  mx-2 py-1.5 hover:text-black hover:bg-primary "
+                    >
+                      Portfolio Details
+                    </Link>
+                  </div>
+                )}
+
+                {/* Portfolio  End Area phone Responsive  End*/}
+
+                {/* Account Area start phone Responsive */}
+
+                <button
+                  className="w-full flex  items-center justify-between text-left px-3 py-2 rounded-lg hover:text-black hover:bg-primary "
+                  onClick={() => setAccount(!account)}
+                >
+                  <span> Account</span>
+                  {account ? (
+                    <span>
+                      <IoIosArrowUp />
+                    </span>
+                  ) : (
+                    <span>
+                      <IoIosArrowDown />
+                    </span>
+                  )}
+                </button>
+
+                {account && (
+                  <div className="pl-4 ">
+                    <Link
+                      to="/signUp"
+                      className="block px-4  rounded-lg  mx-2 py-1.5 hover:text-black hover:bg-primary "
+                    >
+                      Sign-UP
+                    </Link>
+                    <Link
+                      to="/signin"
+                      className="block px-4  rounded-lg  mx-2 py-1.5 hover:text-black hover:bg-primary "
+                    >
+                      Sign-In
+                    </Link>
+                  </div>
+                )}
+
+                {/* Account  End Area phone Responsive  End*/}
               </div>
             )}
-            <a href="#" className="block px-3 py-2 hover:bg-green-500">
-              Blog
-            </a>
-            <a href="#" className="block px-3 py-2 hover:bg-green-500">
+
+            <Link
+              to="/contact_us"
+              className="block px-3 py-2 rounded-lg hover:text-black hover:bg-primary "
+            >
               Contact Us
-            </a>
+            </Link>
 
             {/* Contact Button (mobile) */}
             <a

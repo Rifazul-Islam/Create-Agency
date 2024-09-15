@@ -1,4 +1,5 @@
 import { IoCallSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div
@@ -51,27 +52,30 @@ const Banner = () => {
         </div>
 
         {/* Button Area  */}
-        <div className="flex gap-3 items-center  my-3 md:mt-11 ">
-          <p
-            className="btn btn-lg border  mt-10 relative text-[16px] 
-        lg:flex hover:bg-none border-none bg-[#BFF747] hover:bg-[#f431e7] text-md w-[90%] md:w-[65%] mx-auto"
-          >
-            Book A Free Consutation
-            <span
-              className="border rounded-full absolute  right-1
-         flex items-center z-10 justify-center w-14 h-14  bg-black "
+        <Link to="/contact_us">
+          <div className="flex gap-3 items-center  my-3 md:mt-11 ml-0">
+            <p
+              className="btn btn-lg border  mt-10 relative text-[16px] 
+           lg:flex hover:bg-none border-none bg-[#BFF747] hover:bg-[#f431e7] text-md w-[90%] md:w-[65%] ml-5 lg:ml-0 "
             >
-              <IoCallSharp className="text-3xl  text-white"></IoCallSharp>
-            </span>
-          </p>
+              Book A Free Consutation
+              <span
+                className="border rounded-full absolute  right-1
+            flex items-center z-10 justify-center w-14 h-14  bg-black"
+              >
+                <IoCallSharp className="text-3xl  text-white"></IoCallSharp>
+              </span>
+            </p>
 
-          <p className=" -ml-12 -mt-5 z-20 hidden lg:flex">
-            <img
-              src="https://aximo-react.vercel.app/assets/shape1-QTZDjB63.png"
-              alt=""
-            />
-          </p>
-        </div>
+            <p className="z-20 hidden absolute animate-float lg:flex top-[623px] ml-[300px]">
+              <img
+                className="w-56"
+                src="https://aximo-react.vercel.app/assets/shape1-QTZDjB63.png"
+                alt=""
+              />
+            </p>
+          </div>
+        </Link>
       </div>
 
       {/* Right side Image Area */}

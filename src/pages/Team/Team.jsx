@@ -4,19 +4,15 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
+import Cover from "../share/Cover";
 
 const Team = () => {
   return (
     <div className="bg-[#FFFFF5]">
-      <div className="bg-black py-[200px]">
-        <h2 className="text-6xl font-semibold text-[#FFFFF5] text-center font-poppins">
-          Our Team
-        </h2>
-        <div className="flex justify-center text-white gap-2 text-2xl font-semibold items-center font-poppins pt-8">
-          <Link to="/"> Home</Link> <IoIosArrowForward />
-          <span className="text-[#B3F747]"> Our Team </span>
-        </div>
+      <div>
+        <Cover title={"Our Team"} />
       </div>
+
       <div className="bg-[#FFFFF5] px-8 lg:px-20 lg:pb-32 py-10">
         <h2 className="text-center text-5xl lg:text-[65px] font-semibold  leading-none pt-28 lg:pb-28 pb-10">
           We have a team of <br />

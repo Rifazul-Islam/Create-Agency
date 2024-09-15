@@ -2,12 +2,11 @@ import React from "react";
 
 const TestAnimation = () => {
   return (
-    <div className="relative h-screen bg-gray-100 flex items-center justify-center">
-      <div className="absolute bottom-0 right-[500px] top-16 animate-float">
+    <div className="relative  bg-gray-100 flex ml-20">
+      <div className="absolute animate-float">
         <img
-          src="/src/assets/images/favIcon.png"
-          alt="Floating Image"
-          class="w-40 h-40"
+          src="https://aximo-react.vercel.app/assets/shape1-QTZDjB63.png"
+          alt=""
         />
       </div>
     </div>

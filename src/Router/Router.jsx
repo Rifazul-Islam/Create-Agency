@@ -16,6 +16,7 @@ import PortfolioDetails from "../pages/Portfolio.jsx/PortfolioDetails";
 import SignUp from "../pages/Account/SignUp";
 import SignIn from "../pages/Account/SignIn";
 import TestAnimation from "../pages/Home/TestAnimation";
+import ContactUs from "../pages/ContactUs/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -85,6 +86,10 @@ const router = createBrowserRouter([
       {
         path: "/testAnimation",
         element: <TestAnimation></TestAnimation>,
+      },
+      {
+        path: "/contact_us",
+        element: <ContactUs></ContactUs>,
       },
     ],
   },
