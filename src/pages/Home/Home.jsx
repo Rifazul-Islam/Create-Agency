@@ -15,9 +15,9 @@ const Home = () => {
         <Solution></Solution>
         <CreativeProject></CreativeProject>
         <Quality></Quality>
-        {/*   <Reivews></Reivews>
-          <LineSlider></LineSlider>
-          <TeamsMember></TeamsMember>  */}
+        <Reivews></Reivews>
+        <LineSlider></LineSlider>
+        <TeamsMember></TeamsMember>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ const Banner = () => {
     >
       {/* Left side Text Part Area */}
       <div className="mx-auto">
-        <h1 className="md:text-[77px] font-poppins text-6xl md:text-left text-center font-bold text-[#FDFDE1] leading-none">
+        <h1 className="lg:text-[77px] font-poppins text-6xl md:text-left text-center font-bold text-[#FDFDE1] leading-none">
           <span className="flex md:justify-normal justify-center items-center gap-3">
             A creative
             <img
@@ -18,14 +18,14 @@ const Banner = () => {
           </span>
           design studio
         </h1>
-        <p className="mt-10 font-inter md:w-[490px] text-[#FDFDE1]  text-lg">
+        <p className="mt-10 font-inter lg:w-[490px] md:w-[400px] text-[#FDFDE1]  text-lg">
           We're a creative design studio specializing in meeting the needs of
           the new generation. We offer innovative and so cutting-edge design
           solutions to help our clients stand out in today's fast-paced.
         </p>
 
         {/* Your Banner Profile  */}
-        <div className="mt-10 flex flex-col md:flex-row items-center ">
+        <div className="mt-20 flex flex-col md:flex-row items-center ">
           <div className="flex">
             <img
               className="w-14 h-14 rounded-full"

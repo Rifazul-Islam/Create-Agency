@@ -7,7 +7,7 @@ const Quality = () => {
   const [three, setThree] = useState(false);
 
   return (
-    <div className="bg-[#FFFFF5] pb-20 pt-32 p-4 flex  flex-col md:flex-row  lg:px-32 gap-4">
+    <div className="bg-[#FFFFF5] pb-20 pt-32 p-4 flex  flex-col lg:flex-row  lg:px-32 gap-4">
       {/* left side  */}
       <div>
         <h2 className="md:w-[700px] md:text-left text-center w-full lg:text-[60px] text-3xl font-bold font-poppins leading-none">
