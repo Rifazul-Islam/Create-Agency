@@ -1,8 +1,3 @@
-import React from "react";
-import { FiSearch } from "react-icons/fi";
-import { GoDotFill } from "react-icons/go";
-import { IoIosArrowForward } from "react-icons/io";
-import { Link } from "react-router-dom";
 import Cover from "../share/Cover";
 
 const PortfolioDetails = () => {
