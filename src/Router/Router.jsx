@@ -15,6 +15,7 @@ import PortTwoColumn from "../pages/Portfolio.jsx/PortTwoColumn";
 import PortfolioDetails from "../pages/Portfolio.jsx/PortfolioDetails";
 import SignUp from "../pages/Account/SignUp";
 import SignIn from "../pages/Account/SignIn";
+import TestAnimation from "../pages/Home/TestAnimation";
 
 const router = createBrowserRouter([
   {
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
       {
         path: "/signIn",
         element: <SignIn></SignIn>,
+      },
+      {
+        path: "/testAnimation",
+        element: <TestAnimation></TestAnimation>,
       },
     ],
   },

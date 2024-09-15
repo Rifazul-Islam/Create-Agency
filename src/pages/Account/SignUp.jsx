@@ -6,7 +6,7 @@ const SignUp = () => {
   return (
     <div>
       <div className=" bg-second  py-20">
-        <div className=" flex flex-col justify-center items-center gap-10 md:flex-row px-4 md:px-20 ">
+        <div className=" flex flex-col justify-center items-center gap-10 lg:flex-row px-4 md:px-20 ">
           <div className="">
             <Lottie className="md:w-[450px]" animationData={animation} />
           </div>

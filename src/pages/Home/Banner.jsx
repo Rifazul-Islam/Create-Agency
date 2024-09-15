@@ -7,7 +7,7 @@ const Banner = () => {
     >
       {/* Left side Text Part Area */}
       <div className="mx-auto">
-        <h1 className="lg:text-[77px] font-poppins text-6xl md:text-left text-center font-bold text-[#FDFDE1] leading-none">
+        <h1 className="lg:text-[77px] font-poppins text-6xl md:text-left text-center font-semibold text-[#FDFDE1] leading-none">
           <span className="flex md:justify-normal justify-center items-center gap-3">
             A creative
             <img

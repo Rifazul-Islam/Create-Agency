@@ -25,7 +25,7 @@ const About = () => {
       {/* About Gellary  Area   */}
 
       <div className="lg:px-20">
-        <h2 className="text-center  text-4xl lg:text-[60px] font-bold  leading-none pt-20 pb-8">
+        <h2 className="text-center font-poppins  text-4xl lg:text-[55px] font-semibold  leading-none pt-20 pb-8">
           We think our story is worth <br /> sharing with you
         </h2>
 

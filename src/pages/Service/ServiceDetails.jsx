@@ -3,13 +3,19 @@ import { FiSearch } from "react-icons/fi";
 import { FaHandHoldingMedical } from "react-icons/fa";
 import { FaRocket } from "react-icons/fa";
 import Reivews from "../Home/Reivews";
+import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 const ServiceDetails = () => {
   return (
     <div className="bg-[#FFFFF5]">
       <div className="bg-black py-[200px]">
-        <h2 className="text-5xl font-semibold text-white text-center font-sans">
-          Service_Details
+        <h2 className="text-6xl font-semibold text-[#FFFFF5] text-center font-poppins">
+          Service Details
         </h2>
+        <div className="flex justify-center text-white gap-2 text-2xl font-semibold items-center font-poppins pt-8">
+          <Link to="/"> Home</Link> <IoIosArrowForward />
+          <span className="text-[#B3F747]"> Service_Details </span>
+        </div>
       </div>
 
       {/* Product Details  */}
@@ -22,7 +28,7 @@ const ServiceDetails = () => {
         />
 
         <div className="py-4">
-          <h2 className="md:text-4xl text-2xl font-poppins font-bold pt-8">
+          <h2 className="md:text-4xl text-3xl font-poppins font-semibold pt-8">
             UI/UX for modernstarproduct development
           </h2>
           <p className="py-3 font-inter font-medium">
