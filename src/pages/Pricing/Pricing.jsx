@@ -2,12 +2,20 @@ import { FaArrowRight } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
 import Reivews from "../Home/Reivews";
 import LineSlider from "../Home/LineSlider";
-import { useState } from "react";
-import { IoIosArrowForward } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Cover from "../share/Cover";
+import useMenu from "../../hook/useMenu";
+import { FaArrowUp } from "react-icons/fa6";
 const Pricing = () => {
   const [inCrement, setInCrement] = useState(false);
+
+  // scroll button right bottom show button
+  const [scrollButtonRef] = useMenu();
+
+  // first to show page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="bg-[#FFFFF5] ">
@@ -297,6 +305,13 @@ const Pricing = () => {
             project. We provide customized quotes after discussing requirements.
           </p>
         </div>
+      </div>
+
+      {/* Scroll Button  */}
+      <div ref={scrollButtonRef} className="fixed right-5 bottom-5 hidden">
+        <button className="bg-primary  p-3 rounded-lg shadow-lg">
+          <FaArrowUp className="text-2xl" />
+        </button>
       </div>
     </div>
   );

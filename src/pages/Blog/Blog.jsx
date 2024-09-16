@@ -1,9 +1,16 @@
 import { FaArrowRight } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
 import { Link } from "react-router-dom";
-import { IoIosArrowForward } from "react-icons/io";
 import Cover from "../share/Cover";
+import useMenu from "../../hook/useMenu";
+import { useEffect } from "react";
+import { FaArrowUp } from "react-icons/fa6";
 const Blog = () => {
+  const [scrollButtonRef] = useMenu();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="bg-[#FFFFF5]">
       <div>
@@ -233,6 +240,13 @@ const Blog = () => {
         </button>
         <button className=" hover:bg-[#BEF264] border-[1px] hover:border-none flex items-center justify-center border-black rounded-full w-14 h-14">
           <FaArrowRight />
+        </button>
+      </div>
+
+      {/* Scroll Button  */}
+      <div ref={scrollButtonRef} className="fixed right-5 bottom-5 hidden">
+        <button className="bg-primary  p-3 rounded-lg shadow-lg">
+          <FaArrowUp className="text-2xl" />
         </button>
       </div>
     </div>
