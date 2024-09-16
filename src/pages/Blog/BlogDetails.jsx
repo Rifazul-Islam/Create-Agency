@@ -3,8 +3,10 @@ import { SlLike } from "react-icons/sl";
 import { FaRegComment } from "react-icons/fa6";
 import Cover from "../share/Cover";
 import useMenu from "../../hook/useMenu";
+import { FaArrowUp } from "react-icons/fa";
 const BlogDetails = () => {
   const [scrollButtonRef] = useMenu();
+
   return (
     <div>
       <div>
@@ -295,8 +297,8 @@ const BlogDetails = () => {
 
       {/* Scroll Bar  */}
       <div ref={scrollButtonRef} className="fixed right-5 bottom-5 hidden">
-        <button className="bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600">
-          Scroll to Top
+        <button className="bg-primary  p-3 rounded-lg shadow-lg">
+          <FaArrowUp className="text-2xl" />
         </button>
       </div>
     </div>

@@ -9,8 +9,14 @@ import { FaQuestion } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import Cover from "../share/Cover";
+import { useEffect } from "react";
 
 const Service = () => {
+  useEffect(() => {
+    // Scroll to the top of the page on component mount
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-[#FFFFF5]">
       <div>
