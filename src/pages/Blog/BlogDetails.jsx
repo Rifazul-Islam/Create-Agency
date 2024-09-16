@@ -3,15 +3,26 @@ import { SlLike } from "react-icons/sl";
 import { FaRegComment } from "react-icons/fa6";
 import Cover from "../share/Cover";
 import useMenu from "../../hook/useMenu";
-import { FaArrowUp } from "react-icons/fa";
+import ButtonComponent from "../share/ButtonComponent";
+import { useEffect } from "react";
 const BlogDetails = () => {
   const [scrollButtonRef] = useMenu();
+
+  // Scroll to the top of the page on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>
       <div>
         <Cover title={"Blog Details"} />
       </div>
+
+      <div>
+        <ButtonComponent scrollValue={scrollButtonRef} />
+      </div>
+
       {/* Detaisl Page  */}
 
       <div className="grid lg:grid-cols-3 lg:px-20 px-3 py-14 gap-4 bg-[#FFFFF5]">
@@ -293,13 +304,6 @@ const BlogDetails = () => {
             </button>
           </div>
         </div>
-      </div>
-
-      {/* Scroll Bar  */}
-      <div ref={scrollButtonRef} className="fixed right-5 bottom-5 hidden">
-        <button className="bg-primary  p-3 rounded-lg shadow-lg">
-          <FaArrowUp className="text-2xl" />
-        </button>
       </div>
     </div>
   );

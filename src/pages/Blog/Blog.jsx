@@ -5,16 +5,22 @@ import Cover from "../share/Cover";
 import useMenu from "../../hook/useMenu";
 import { useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa6";
+import ButtonComponent from "../share/ButtonComponent";
 const Blog = () => {
   const [scrollButtonRef] = useMenu();
 
+  // Scroll to the top of the page on component mount
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="bg-[#FFFFF5]">
       <div>
         <Cover title={"Blog"} />
+      </div>
+      <div>
+        <ButtonComponent scrollValue={scrollButtonRef} />
       </div>
 
       {/* Our Blog Part  */}
@@ -240,13 +246,6 @@ const Blog = () => {
         </button>
         <button className=" hover:bg-[#BEF264] border-[1px] hover:border-none flex items-center justify-center border-black rounded-full w-14 h-14">
           <FaArrowRight />
-        </button>
-      </div>
-
-      {/* Scroll Button  */}
-      <div ref={scrollButtonRef} className="fixed right-5 bottom-5 hidden">
-        <button className="bg-primary  p-3 rounded-lg shadow-lg">
-          <FaArrowUp className="text-2xl" />
         </button>
       </div>
     </div>

@@ -1,12 +1,26 @@
 import { CiSearch } from "react-icons/ci";
-import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import Cover from "../share/Cover";
+import useMenu from "../../hook/useMenu";
+import ButtonComponent from "../share/ButtonComponent";
+import { useEffect } from "react";
 const BlogGrid = () => {
+  const [scrollButtonRef] = useMenu();
+
+  // Scroll to the top of the page on component mount
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-[#FFFFF5]">
       <div>
         <Cover title={"Blog Grid"} />
+      </div>
+
+      <div>
+        <ButtonComponent scrollValue={scrollButtonRef} />
       </div>
 
       <div className="grid lg:grid-cols-3 gap-4 my-10  lg:px-20 px-4 ">

@@ -10,10 +10,14 @@ import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import Cover from "../share/Cover";
 import { useEffect } from "react";
+import useMenu from "../../hook/useMenu";
+import ButtonComponent from "../share/ButtonComponent";
 
 const Service = () => {
+  const [scrollButtonRef] = useMenu();
+
+  // Scroll to the top of the page on component mount
   useEffect(() => {
-    // Scroll to the top of the page on component mount
     window.scrollTo(0, 0);
   }, []);
 
@@ -21,6 +25,10 @@ const Service = () => {
     <div className="bg-[#FFFFF5]">
       <div>
         <Cover title={"Service"} />
+      </div>
+
+      <div>
+        <ButtonComponent scrollValue={scrollButtonRef} />
       </div>
 
       {/* product Area  */}

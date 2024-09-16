@@ -6,11 +6,25 @@ import Reivews from "../Home/Reivews";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import Cover from "../share/Cover";
+import useMenu from "../../hook/useMenu";
+import { useEffect } from "react";
+import ButtonComponent from "../share/ButtonComponent";
 const ServiceDetails = () => {
+  const [scrollButtonRef] = useMenu();
+
+  // Scroll to the top of the page on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-[#FFFFF5]">
       <div>
         <Cover title={"Service Details"} />
+      </div>
+
+      <div>
+        <ButtonComponent scrollValue={scrollButtonRef} />
       </div>
       {/* Product Details  */}
 
