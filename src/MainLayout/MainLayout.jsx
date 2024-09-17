@@ -3,14 +3,13 @@ import Navbar from "../pages/Navbar/Navbar";
 import Footer from "../pages/share/Footer";
 
 const MainLayout = () => {
-    return (
-        <div>
-          
-            <Navbar></Navbar>
-            <Outlet></Outlet>
-            <Footer></Footer>
-        </div>
-    );
+  return (
+    <div>
+      <Navbar></Navbar>
+      <Outlet></Outlet>
+      <Footer></Footer>
+    </div>
+  );
 };
 
 export default MainLayout;

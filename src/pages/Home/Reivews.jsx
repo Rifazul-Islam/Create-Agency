@@ -22,7 +22,11 @@ const Reivews = () => {
       {/* Card Area   */}
       <div className="pb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {/* card 1 */}
-        <div className="card border-2 border-black p-4 mx-auto">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="card border-2 border-black p-4 mx-auto"
+        >
           <span className="text-3xl flex gap-1">
             <FaStar></FaStar>
             <FaStar></FaStar>
@@ -54,7 +58,11 @@ const Reivews = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="card  border-2 border-black p-4 mx-auto">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="card  border-2 border-black p-4 mx-auto"
+        >
           <span className="text-3xl flex gap-1">
             <FaStar></FaStar>
             <FaStar></FaStar>
@@ -86,7 +94,11 @@ const Reivews = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="card  border-2 border-black p-4 mx-auto">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="card  border-2 border-black p-4 mx-auto"
+        >
           <span className="text-3xl flex gap-1">
             <FaStar></FaStar>
             <FaStar></FaStar>
@@ -118,7 +130,11 @@ const Reivews = () => {
         </div>
 
         {/* Card 4 */}
-        <div className="card  border-2 border-black p-4 mx-auto">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="card  border-2 border-black p-4 mx-auto"
+        >
           <span className="text-3xl flex gap-1">
             <FaStar></FaStar>
             <FaStar></FaStar>

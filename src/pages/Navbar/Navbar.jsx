@@ -43,9 +43,9 @@ const Navbar = () => {
 
             {/* Large Screen Menu */}
             <div className="hidden md:flex space-x-6 pt-3 text-lg">
-              <a href="#" className="hover:text-[#BEF264]">
+              <Link to="/" className="hover:text-[#BEF264]">
                 Demo
-              </a>
+              </Link>
               <Link to="/about" className="hover:text-[#BEF264]">
                 About Us
               </Link>
@@ -88,11 +88,8 @@ const Navbar = () => {
                         onMouseEnter={() => setDropdownBlog(true)}
                         onMouseLeave={() => setDropdownBlog(false)}
                       >
-                        <Link
-                          to="/blog"
-                          className="flex items-center gap-24 px-4 py-1.5"
-                        >
-                          <span> Blog</span>
+                        <Link className="flex items-center gap-24 px-4 py-1.5">
+                          <span>Blog</span>
                           {dropdownBlog ? (
                             <span>
                               <IoIosArrowUp />
@@ -303,12 +300,12 @@ const Navbar = () => {
 
             {/* Contact Button (large screens) */}
             <div className="hidden md:block">
-              <a
-                href="#"
+              <Link
+                to="/contact_us"
                 className="bg-lime-400 text-black px-4 py-2 rounded-lg hover:bg-lime-300"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
 
             {/* Mobile Menu Icon */}

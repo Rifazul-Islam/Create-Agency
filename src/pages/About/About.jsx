@@ -2,11 +2,9 @@ import React, { useEffect } from "react";
 import Business from "../Home/Business";
 import LineSlider from "../Home/LineSlider";
 import TeamsMember from "../Home/TeamsMember";
-import { IoIosArrowForward } from "react-icons/io";
-import { Link } from "react-router-dom";
 import Cover from "../share/Cover";
-import { FaArrowUp } from "react-icons/fa6";
 import useMenu from "../../hook/useMenu";
+import ButtonComponent from "../share/ButtonComponent";
 
 const About = () => {
   const [scrollButtonRef] = useMenu();
@@ -21,6 +19,9 @@ const About = () => {
         <Cover title={"About Us"} />
       </div>
 
+      <div>
+        <ButtonComponent scrollValue={scrollButtonRef} />
+      </div>
       <div className="px-4 lg:px-20">
         <Business></Business>
       </div>
@@ -109,13 +110,6 @@ const About = () => {
 
       <div>
         <TeamsMember></TeamsMember>
-      </div>
-
-      {/* Scroll Button  */}
-      <div ref={scrollButtonRef} className="fixed right-5 bottom-5 hidden">
-        <button className="bg-primary  p-3 rounded-lg shadow-lg">
-          <FaArrowUp className="text-2xl" />
-        </button>
       </div>
     </div>
   );

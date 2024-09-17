@@ -3,17 +3,25 @@ import { Link } from "react-router-dom";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
+import useMenu from "../../hook/useMenu";
+import { useEffect } from "react";
+import Cover from "../share/Cover";
+import ButtonComponent from "../share/ButtonComponent";
 const ContactUs = () => {
+  const [scrollButtonRef] = useMenu();
+
+  // Scroll to the top of the page on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="bg-[#fff] ">
-      <div className="bg-black py-[200px]">
-        <h2 className="text-6xl font-semibold text-[#FFFFF5] text-center font-poppins">
-          Contact-US
-        </h2>
-        <div className="flex justify-center text-white gap-2 text-2xl font-semibold items-center font-poppins pt-8">
-          <Link to="/"> Home</Link> <IoIosArrowForward />
-          <span className="text-[#B3F747]"> Contact-US </span>
-        </div>
+      <div>
+        <Cover title={"Contact-US"} />
+      </div>
+
+      <div>
+        <ButtonComponent scrollValue={scrollButtonRef} />
       </div>
 
       <h2 className="font-poppins p-0.5 text-[40px] md:text-[60px] text-center font-semibold  leading-none md:pt-14 py-10 lg:pb-10">
@@ -30,7 +38,7 @@ const ContactUs = () => {
 
       <div className="lg:px-20 px-4 grid grid-col-1 lg:grid-cols-2 gap-7 py-10">
         {/* left site card*/}
-        <div>
+        <div data-aos="flip-up" data-aos-duration="2000">
           <div className="card w-full  border-[1px] border-black">
             <form className="card-body">
               {/* Name box */}
@@ -96,7 +104,11 @@ const ContactUs = () => {
 
         {/* right site area image */}
 
-        <div className="mt-5 lg:mt-0">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="mt-5 lg:mt-0"
+        >
           <img
             className="rounded-2xl border-4 border-black"
             src="https://aximo-react.vercel.app/assets/service-single2-B5XXn7Rt.png"
@@ -120,7 +132,11 @@ const ContactUs = () => {
 
         <div className="lg:px-20 px-4 grid grid-col-1 lg:grid-cols-3 gap-7 py-10">
           {/* 01 */}
-          <div className=" bg-black flex gap-6  text-3xl font-poppins text-[#FFFFF5] shadow-lg rounded-lg p-6">
+          <div
+            data-aos="zoom-out-down"
+            data-aos-duration="3000"
+            className=" bg-black flex gap-6  text-3xl font-poppins text-[#FFFFF5] shadow-lg rounded-lg p-6"
+          >
             <div className="text-4xl text-primary">
               <IoCall />
             </div>
@@ -132,7 +148,11 @@ const ContactUs = () => {
           </div>
           {/* 02 */}
 
-          <div className=" bg-black flex gap-6  text-3xl font-poppins text-[#FFFFF5] shadow-lg rounded-lg p-6">
+          <div
+            data-aos="zoom-out-down"
+            data-aos-duration="3000"
+            className=" bg-black flex gap-6  text-3xl font-poppins text-[#FFFFF5] shadow-lg rounded-lg p-6"
+          >
             <div className="text-4xl text-primary">
               <MdEmail />
             </div>
@@ -145,7 +165,11 @@ const ContactUs = () => {
 
           {/* 03 */}
 
-          <div className=" bg-black flex gap-6  text-3xl font-poppins text-[#FFFFF5] shadow-lg rounded-lg p-6">
+          <div
+            data-aos="zoom-out-down"
+            data-aos-duration="3000"
+            className=" bg-black flex gap-6  text-3xl font-poppins text-[#FFFFF5] shadow-lg rounded-lg p-6"
+          >
             <div className="text-4xl text-primary">
               <FaLocationDot />
             </div>
@@ -159,7 +183,11 @@ const ContactUs = () => {
 
       {/* Google Map use  */}
 
-      <div className=" py-16 mb-20">
+      <div
+        data-aos="zoom-in-up"
+        data-aos-duration="2000"
+        className=" py-16 mb-20"
+      >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7497570.975902516!2d85.04471258115706!3d23.427136672988368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1726400016666!5m2!1sen!2sbd"
           width="1000"

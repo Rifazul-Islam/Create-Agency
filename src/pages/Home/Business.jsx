@@ -30,7 +30,7 @@ const Business = () => {
       {/* Expreriece Section Area */}
 
       <div className=" flex flex-col mt-4 lg:flex-row justify-center pb-16">
-        <div className="relative">
+        <div data-aos="fade-up" data-aos-duration="3000" className="relative">
           {/* Image Area */}
           <img
             className="w-[700px] h-[390px] border-4 rounded-lg block border-black"

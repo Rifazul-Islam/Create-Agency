@@ -5,12 +5,26 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import Cover from "../share/Cover";
+import useMenu from "../../hook/useMenu";
+import { useEffect } from "react";
+import ButtonComponent from "../share/ButtonComponent";
 
 const Team = () => {
+  const [scrollButtonRef] = useMenu();
+
+  // Scroll to the top of the page on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-[#FFFFF5]">
       <div>
         <Cover title={"Our Team"} />
+      </div>
+
+      <div>
+        <ButtonComponent scrollValue={scrollButtonRef} />
       </div>
 
       <div className="bg-[#FFFFF5] px-8 lg:px-20 lg:pb-32 py-10">

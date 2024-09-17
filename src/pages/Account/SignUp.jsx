@@ -2,7 +2,12 @@ import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import Lottie from "lottie-react";
 import animation from "/public/test";
+import { useEffect } from "react";
 const SignUp = () => {
+  // Scroll to the top of the page on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className=" bg-second  py-20">

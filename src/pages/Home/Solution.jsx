@@ -23,7 +23,11 @@ const Solution = () => {
       <div className="pb-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {/* card 1 */}
 
-        <div className="card cursor-pointer hover:shadow-right duration-700  hover:duration-700 border-[1px] border-black p-4 mx-auto hover:bg-primary ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="card cursor-pointer hover:shadow-right duration-700  hover:duration-700 border-[1px] border-black p-4 mx-auto hover:bg-primary "
+        >
           <span className="text-5xl">
             <TbBrandAirbnb></TbBrandAirbnb>
           </span>
@@ -47,7 +51,11 @@ const Solution = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="cursor-pointer card hover:shadow-right duration-700  hover:duration-700 border-[1px] border-black p-4 mx-auto hover:bg-primary ">
+        <div
+          data-aos-duration="2000"
+          data-aos="fade-up"
+          className="cursor-pointer card hover:shadow-right duration-700  hover:duration-700 border-[1px] border-black p-4 mx-auto hover:bg-primary "
+        >
           <span className="text-5xl">
             <MdDesignServices></MdDesignServices>
           </span>
@@ -71,7 +79,11 @@ const Solution = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="cursor-pointer card hover:shadow-right duration-700  hover:duration-700 border-[1px] border-black p-4 mx-auto hover:bg-primary ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="cursor-pointer card hover:shadow-right duration-700  hover:duration-700 border-[1px] border-black p-4 mx-auto hover:bg-primary "
+        >
           <span className="text-5xl">
             <MdWeb></MdWeb>
           </span>
@@ -95,7 +107,11 @@ const Solution = () => {
         </div>
 
         {/* Card 4 */}
-        <div className="cursor-pointer card hover:shadow-right duration-700  hover:duration-700 border-[1px] border-black p-4 mx-auto hover:bg-primary ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="cursor-pointer card hover:shadow-right duration-700  hover:duration-700 border-[1px] border-black p-4 mx-auto hover:bg-primary "
+        >
           <span className="text-5xl">
             <MdDesignServices></MdDesignServices>
           </span>

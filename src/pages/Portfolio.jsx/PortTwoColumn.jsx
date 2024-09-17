@@ -1,15 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import Cover from "../share/Cover";
+import useMenu from "../../hook/useMenu";
+import ButtonComponent from "../share/ButtonComponent";
 const PortTwoColumn = () => {
   const [oneCard, setOneCard] = useState(false);
 
+  const [scrollButtonRef] = useMenu();
+
+  // Scroll to the top of the page on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="bg-[#FFFFF5]">
       <div>
         <Cover title={"Portfolio Two Column"} />
+      </div>
+
+      <div>
+        <ButtonComponent scrollValue={scrollButtonRef} />
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 px-4 lg:px-20 md:py-14">

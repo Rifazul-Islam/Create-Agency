@@ -1,10 +1,23 @@
+import { useEffect } from "react";
+import useMenu from "../../hook/useMenu";
 import Cover from "../share/Cover";
+import ButtonComponent from "../share/ButtonComponent";
 
 const PortfolioDetails = () => {
+  const [scrollButtonRef] = useMenu();
+
+  // Scroll to the top of the page on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="bg-[#FFFFF5]">
       <div>
         <Cover title={"Portfolio Details"} />
+      </div>
+
+      <div>
+        <ButtonComponent scrollValue={scrollButtonRef} />
       </div>
 
       <div className="pt-5 px-4 lg:px-32 md:py-14">

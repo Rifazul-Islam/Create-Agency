@@ -5,7 +5,7 @@ import LineSlider from "../Home/LineSlider";
 import { useEffect, useState } from "react";
 import Cover from "../share/Cover";
 import useMenu from "../../hook/useMenu";
-import { FaArrowUp } from "react-icons/fa6";
+import ButtonComponent from "../share/ButtonComponent";
 const Pricing = () => {
   const [inCrement, setInCrement] = useState(false);
 
@@ -24,6 +24,9 @@ const Pricing = () => {
         <Cover title={"Pricing"}> </Cover>
       </div>
 
+      <div>
+        <ButtonComponent scrollValue={scrollButtonRef} />
+      </div>
       {/* Package Buy Area */}
       <div className="py-10">
         <h2 className="text-center text-4xl md:text-5xl  lg:text-[60px] font-semibold  font-poppins leading-none pt-28 lg:pb-28 pb-10">
@@ -305,13 +308,6 @@ const Pricing = () => {
             project. We provide customized quotes after discussing requirements.
           </p>
         </div>
-      </div>
-
-      {/* Scroll Button  */}
-      <div ref={scrollButtonRef} className="fixed right-5 bottom-5 hidden">
-        <button className="bg-primary  p-3 rounded-lg shadow-lg">
-          <FaArrowUp className="text-2xl" />
-        </button>
       </div>
     </div>
   );

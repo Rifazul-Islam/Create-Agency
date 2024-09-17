@@ -17,12 +17,12 @@ const TeamsMember = () => {
         </span>
       </h2>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4">
         {/* card 01 */}
-        <div>
+        <div data-aos="fade-up" data-aos-duration="2000">
           <div className="relative group">
             <img
-              className="lg:w-[300px] lg:h-[300px] border-4 border-black rounded-md"
+              className=" border-4 border-black rounded-md"
               src="https://aximo-react.vercel.app/assets/team1-DmWE10zh.png"
               alt=""
             />
@@ -57,16 +57,24 @@ const TeamsMember = () => {
           </div>
 
           <div className="text-center">
-            <h2 className="text-2xl font-sans font-bold mt-4"> Andrew Mark</h2>
-            <p className="text-lg font-sans"> Project Executive</p>
+            <h2 className="text-4xl font-poppins font-semibold mt-4">
+              Andrew Mark
+            </h2>
+            <p className="text-2xl pt-1 font-inter font-semibold">
+              Project Executive
+            </p>
           </div>
         </div>
 
         {/* card 02 */}
-        <div className=" md:pt-0 pt-4 lg:pt-0">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className=" md:pt-0 pt-4 lg:pt-0"
+        >
           <div className="relative group">
             <img
-              className="lg:w-[300px] lg:h-[300px] border-4 border-black rounded-md"
+              className=" border-4 border-black rounded-md"
               src="https://aximo-react.vercel.app/assets/team2-CCsDsUp2.png"
               alt=""
             />
@@ -101,17 +109,25 @@ const TeamsMember = () => {
           </div>
 
           <div className="text-center">
-            <h2 className="text-2xl font-sans font-bold mt-4"> Jack Mark</h2>
-            <p className="text-lg font-sans"> Project Manager</p>
+            <h2 className="text-4xl font-poppins font-semibold mt-4">
+              Jack Mark
+            </h2>
+            <p className="text-2xl font-inter font-semibold pt-1">
+              Project Manager
+            </p>
           </div>
         </div>
 
         {/* card 03 */}
 
-        <div className="pt-4 lg:pt-0">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="pt-4 lg:pt-5"
+        >
           <div className="relative group">
             <img
-              className="lg:w-[300px] lg:h-[300px] border-4 border-black rounded-md"
+              className=" border-4 border-black rounded-md"
               src="https://aximo-react.vercel.app/assets/team3-Dq8iIK3F.png"
               alt=""
             />
@@ -146,17 +162,25 @@ const TeamsMember = () => {
           </div>
 
           <div className="text-center">
-            <h2 className="text-2xl font-sans font-bold mt-4"> Aslam Shah</h2>
-            <p className="text-lg font-sans">Full Stack Developer</p>
+            <h2 className="text-4xl font-poppins font-semibold mt-4">
+              Aslam Shah
+            </h2>
+            <p className="text-2xl pt-1 font-inter font-semibold">
+              Full Stack Developer
+            </p>
           </div>
         </div>
 
         {/* card 04 */}
 
-        <div className="pt-4 lg:pt-0">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="pt-4 lg:pt-5"
+        >
           <div className="relative group">
             <img
-              className="lg:w-[300px] lg:h-[300px] border-4 border-black rounded-md"
+              className="border-4 border-black rounded-md"
               src="https://aximo-react.vercel.app/assets/team4-CN3ED17F.png"
               alt=""
             />
@@ -191,10 +215,12 @@ const TeamsMember = () => {
           </div>
 
           <div className="text-center">
-            <h2 className="text-2xl font-sans font-bold mt-4">
+            <h2 className="text-4xl font-poppins font-semibold mt-4">
               Khondhokar Alam
             </h2>
-            <p className="text-lg font-sans"> Mern Stack Developer</p>
+            <p className="text-2xl font-semibold pt-1 font-inter">
+              Mern Stack Developer
+            </p>
           </div>
         </div>
       </div>

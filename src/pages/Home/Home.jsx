@@ -9,6 +9,7 @@ import Solution from "./Solution";
 import TeamsMember from "./TeamsMember";
 import useMenu from "../../hook/useMenu";
 import { useEffect } from "react";
+import ButtonComponent from "../share/ButtonComponent";
 
 const Home = () => {
   const [scrollButtonRef] = useMenu();
@@ -27,10 +28,8 @@ const Home = () => {
         <Reivews></Reivews>
         <LineSlider></LineSlider>
         <TeamsMember></TeamsMember>
-        <div ref={scrollButtonRef} className="fixed right-5 bottom-5 hidden">
-          <button className="bg-primary  p-3 rounded-lg shadow-lg">
-            <FaArrowUp className="text-2xl" />
-          </button>
+        <div>
+          <ButtonComponent scrollValue={scrollButtonRef} />
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ const Banner = () => {
          flex justify-between flex-col md:flex-row  w-full pt-44"
     >
       {/* Left side Text Part Area */}
-      <div className="mx-auto">
+      <div data-aos="fade-up" className="mx-auto">
         <h1 className="lg:text-[77px] font-poppins text-6xl md:text-left text-center font-semibold text-[#FDFDE1] leading-none">
           <span className="flex md:justify-normal justify-center items-center gap-3">
             A creative
@@ -79,7 +79,10 @@ const Banner = () => {
       </div>
 
       {/* Right side Image Area */}
-      <div className="lg:pt-0 pt-8 mx-auto overflow-hidden">
+      <div
+        data-aos="fade-left"
+        className="lg:pt-0 pt-8 mx-auto overflow-hidden"
+      >
         <img
           className="mx-auto w-full md:w-80 h-auto md:h-[350px] border-4 rounded-md border-[#FDFDE1] transition duration-500 hover:scale-110"
           src="https://aximo-react.vercel.app/assets/hero-thumb-f_JNxdoW.png"
